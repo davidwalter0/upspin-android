@@ -8,39 +8,17 @@ See the [master repository](https://github.com/upspin/upspin#readme) for more in
 
 To build a new APK:
 
-- Download and install Android Studio:
-https://developer.android.com/studio/index.html
+1.  Download and install [Android Studio](https://developer.android.com/studio/index.html).
 
-- Launch Android Studio (<installation_dir>/bin/studio.sh)
+2.  Follow the [instructions to build gobind.aar](https://github.com/upspin/android/blob/master/gobind/README.md).
 
-- On the main screen, select Import Project (Eclipse, Gradle, etc)
-  - Select this project. You should see an Android Studio icon close to it.
+3.  Launch Android Studio (<installation_dir>/bin/studio.sh)
 
-- Install an updated Android SDK from within Android Studio.
-  - Tools > Android > SDK Manager
+4.  Press **Open an existing Android Studio project** and locate this repo.
 
-- Build go bindings for Android:
-  - cd $GOPATH/src/upspin.io/exp/client/gobind
-  - go generate
+5.  Sync gradle and build the project using **Build > Rebuild project**
 
-- Import the .aar created in the step above:
-  - File > New > New Module > Import .JAR/.AAR Package
-  - Enter the path above, expanding the GOPATH var.
-  - It should find gobind.aar.
-  - Your project window now should have app and gobind.
+6.  Plug a phone in Developer Mode and launch the app: Run > Run (or click on
+    the green "play" icon near menu item Run)
 
-- Set gobind as a dependency:
-  - File > Project Structure
-  - Click on "app".
-  - Select the Dependencies tab.
-  - Click + on the top right margin.
-  - Select gobind.
-  - Click Ok.
-
-- Build the project
-  - Build > Rebuild project
-
-- Plug a phone in Developer Mode and launch the app:
-  - Run > Run (or click on the green "play" icon near menu item Run)
-
-- Follow configuration instructions on the phone.
+7.  Follow configuration instructions on the phone.

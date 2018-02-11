@@ -5,6 +5,8 @@
 .DS_Store
 /build
 /captures
-*gradle*
+.gradle
 .idea/
-gobind/
+gobind/gobind.aar
+gobind/gobind-sources.jar
+.externalNativeBuild
